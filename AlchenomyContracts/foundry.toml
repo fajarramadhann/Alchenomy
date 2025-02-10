@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = [
+    '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+]
+[rpc_endpoints]
+manta_pacific_testnet = "https://pacific-rpc.sepolia-testnet.manta.network/http"
+
+# 7d619c10e25c137bacd56300ee7919b1097325748e45be7a67a4826eade961e7
+# src/IDRWStableCoin.sol
+# src/IDRWEngine.sol
+# forge create IDRWEngine --constructor-args 0x80e659DF19778d6246D02A956Eb60BF2d211342a 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599 0xF9680D99D6C9589e2a93a78A04A279e509205945 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c 0x76cC7A51364783e76b6B68d503E0CF7DA7FcbC99 --rpc-url https://pacific-rpc.sepolia-testnet.manta.network/http --private-key 7d619c10e25c137bacd56300ee7919b1097325748e45be7a67a4826eade961e7warp
