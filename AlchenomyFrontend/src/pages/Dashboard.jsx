@@ -1,5 +1,6 @@
-import { ArrowUp, CogIcon, Wallet } from "lucide-react";
+import { ArrowUp, CogIcon } from "lucide-react";
 import { useState } from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import coin from "../assets/coin.png";
 import WithdrawForm from "../components/Withdraw";
 import DepositForm from "../components/Deposit";
@@ -22,9 +23,8 @@ export default function Dashboard() {
                             <span>Alchenomy</span>
                         </div>
 
-                        <div className="flex items-center gap-2 bg-blue-950/40 px-4 py-2 rounded-lg text-gray-100">
-                            <Wallet size={16} />
-                            <span className="hidden sm:inline">0x234324</span>
+                        <div className="flex items-center gap-2 px-4 py-2">
+                            <ConnectButton />
                         </div>
                     </header>
                 </div>
